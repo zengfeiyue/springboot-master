@@ -38,10 +38,10 @@ public class UserMapperTest {
 
     @Test
     public void testUpdate() throws Exception {
-        UserEntity user = UserMapper.getOne(3l);
+       /* UserEntity user = UserMapper.getOne(3l);
         System.out.println(user.toString());
         user.setNickName("neo");
-        UserMapper.update(user);
+        UserMapper.update(user);*/
 
     }
 }
