@@ -3,7 +3,7 @@ server:
 spring:
     datasource:
         name: test
-        url: jdbc:mysql://localhost:3307/test
+        url: jdbc:mysql://192.168.21.131:3306/sys
         username: root
         password: root
         # 使用druid数据源
@@ -22,5 +22,13 @@ spring:
         testOnReturn: false
         poolPreparedStatements: true
         maxOpenPreparedStatements: 20
+        #thymeleaf配置
+        thymeleaf:
+            mode: HTML5
+            encoding: utf-8
+            content-type: text/html
+            cache: false
 mybatis:
     type-aliases-package: com.spring.boot.entity
+    mapper-locations: classpath:mybatis/mapper/*.xml
+

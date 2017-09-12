@@ -5,6 +5,7 @@ import com.spring.boot.enums.UserSexEnum;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by zfy on 2017/8/18.
@@ -32,4 +33,7 @@ public interface UserMapper {
 
     @Delete("DELETE FROM users WHERE id =#{id}")
     void delete(Long id);
+    @Select(" SELECT * from sys_config")
+    @ResultType(Map.class)
+    List<Map> select();
 }
