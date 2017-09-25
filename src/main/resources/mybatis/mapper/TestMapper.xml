@@ -6,4 +6,8 @@
     <select id="select" resultType="java.util.Map" >
         SELECT * from sys_config
     </select>
+
+    <select id="select2" resultType="java.util.Map" >
+        SELECT * from sys_config
+    </select>
 </mapper>
