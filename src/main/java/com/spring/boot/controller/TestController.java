@@ -50,4 +50,10 @@ public class TestController {
 
         return "1213";
     }
+    @CacheEvict(value = {"select"}, allEntries = true)
+    @RequestMapping("/test4")
+    public String test4(){
+
+        return "1213";
+    }
 }
