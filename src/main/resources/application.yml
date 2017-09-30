@@ -4,7 +4,7 @@ server:
 spring:
     datasource:
         name: test
-        url: jdbc:mysql://192.168.21.131:3306/sys
+        url: jdbc:mysql://192.168.21.131:3306/test
         username: root
         password: root
         type: com.alibaba.druid.pool.DruidDataSource
@@ -39,7 +39,7 @@ spring:
         min-idle: 0
       timeout: 0
 mybatis:
-    type-aliases-package: com.spring.boot.entity
-    mapper-locations: classpath:mybatis/mapper/*.xml
+    type-aliases-package: com.spring.boot.moduls
+    mapper-locations: classpath:mybatis/mapper/**/*.xml
 
 
