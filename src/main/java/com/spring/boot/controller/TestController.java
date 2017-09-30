@@ -1,7 +1,7 @@
 package com.spring.boot.controller;
 
 import com.spring.boot.mapper.TestMapper;
-import com.spring.boot.mapper.UserMapper;
+import com.spring.boot.mapper.security.SysUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,14 +20,11 @@ public class TestController {
     private TestMapper testMapper;
 
     @Autowired
-    private UserMapper userMapper;
+    private SysUserMapper sysUserMapper;
 
 
 
-    @RequestMapping("/home")
-    public String test(){
-        return "hello world";
-    }
+
     @RequestMapping("/test")
     public String test1(){
        List<Map>  list = testMapper.select("1");

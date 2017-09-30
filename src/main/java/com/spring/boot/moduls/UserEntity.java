@@ -1,6 +1,5 @@
-package com.spring.boot.entity;
+package com.spring.boot.moduls;
 
-import com.spring.boot.enums.UserSexEnum;
 
 import java.io.Serializable;
 
@@ -12,18 +11,18 @@ public class UserEntity implements Serializable {
     private Long id;
     private String userName;
     private String passWord;
-    private UserSexEnum userSex;
+
     private String nickName;
 
     public UserEntity() {
         super();
     }
 
-    public UserEntity(String userName, String passWord, UserSexEnum userSex) {
+    public UserEntity(String userName, String passWord) {
         super();
         this.passWord = passWord;
         this.userName = userName;
-        this.userSex = userSex;
+
     }
 
     public Long getId() {
@@ -50,13 +49,7 @@ public class UserEntity implements Serializable {
         this.passWord = passWord;
     }
 
-    public UserSexEnum getUserSex() {
-        return userSex;
-    }
 
-    public void setUserSex(UserSexEnum userSex) {
-        this.userSex = userSex;
-    }
 
     public String getNickName() {
         return nickName;
@@ -69,6 +62,6 @@ public class UserEntity implements Serializable {
     @Override
     public String toString() {
         // TODO Auto-generated method stub
-        return "userName " + this.userName + ", pasword " + this.passWord + "sex " + userSex.name();
+        return "userName " + this.userName + ", pasword " + this.passWord ;
     }
 }
