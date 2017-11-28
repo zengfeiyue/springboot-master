@@ -1,6 +1,9 @@
 package com.spring.boot.moduls.security;
 
-
+/**
+ *
+ * @author zengfeiyue
+ */
 public class SysPermission {
     private Integer id;
     private String name;

@@ -1,4 +1,4 @@
-package com.spring.boot.config;
+package com.spring.boot.core.config;
 
 import com.alibaba.fastjson.JSON;
 import com.fasterxml.jackson.annotation.JsonAutoDetect;

@@ -1,11 +1,8 @@
-package com.spring.boot.utils;
-
-/**
- * Created by yangyibo on 17/2/7.
- */
+package com.spring.boot.core.utils;
 import java.security.MessageDigest;
 
 /**
+ * @author zengfeiyue
  * MD5加密工具
  *
  */
@@ -63,7 +60,7 @@ public class MD5Util {
 
     	
     public static void main(String[] args) {
-        System.out.println(MD5Util.encode("abel"));
+        System.out.println(MD5Util.encode("1"));
         System.out.println(MD5Util.encode("admin"));
     }
 }

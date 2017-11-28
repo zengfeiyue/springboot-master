@@ -1,4 +1,4 @@
-package com.spring.boot.security;
+package com.spring.boot.core.security;
 
 import org.springframework.security.access.ConfigAttribute;
 

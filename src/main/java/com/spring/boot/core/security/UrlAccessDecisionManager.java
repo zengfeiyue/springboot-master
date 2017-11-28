@@ -1,4 +1,4 @@
-package com.spring.boot.security;
+package com.spring.boot.core.security;
 
 import org.springframework.security.access.AccessDecisionManager;
 import org.springframework.security.access.AccessDeniedException;
@@ -15,7 +15,7 @@ import java.util.Collection;
 
 
 /**
- * Created by zengfeiyue on 17/1/19.
+ * @author  zengfeiyue on 17/1/19.
  */
 @Service
 public class UrlAccessDecisionManager implements AccessDecisionManager {
@@ -41,8 +41,6 @@ public class UrlAccessDecisionManager implements AccessDecisionManager {
                     url = urlGrantedAuthority.getPermissionUrl();
                     method = urlGrantedAuthority.getMethod();
                     if (matchers(url, request)) {
-                        System.err.println(request.getMethod());
-                        System.err.println(method.equals(request.getMethod()) || "ALL".equals(method));
                         if (method.equals(request.getMethod()) || "ALL".equals(method)) {
                             return;
                         }

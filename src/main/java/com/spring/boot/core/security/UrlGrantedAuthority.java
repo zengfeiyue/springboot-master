@@ -1,9 +1,9 @@
-package com.spring.boot.security;
+package com.spring.boot.core.security;
 
 import org.springframework.security.core.GrantedAuthority;
 
 /**
- * Created by zengfeiyue on 17/2/15.
+ * @author Created by zengfeiyue on 17/2/15.
  */
 public class UrlGrantedAuthority implements GrantedAuthority {
 

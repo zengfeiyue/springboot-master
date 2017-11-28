@@ -6,11 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.session.SessionRegistry;
 import org.springframework.stereotype.Service;
 
-
+/**
+ * @author zengfeiyue
+ */
 @Service
 public class SysUserService {
-	@Autowired
-	private SessionRegistry sessionRegistry;
 
 	@Autowired
 	private SysUserMapper sysUserMapper;

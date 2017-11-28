@@ -1,7 +1,6 @@
-package com.spring.boot.security;
+package com.spring.boot.core.security;
 
 import org.springframework.security.access.ConfigAttribute;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
 import org.springframework.stereotype.Service;
@@ -12,7 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by zengfeiyue on 17/1/19.
+ * @author Created by zengfeiyue on 17/1/19.
  */
 @Service
 public class UrlMetadataSourceService implements

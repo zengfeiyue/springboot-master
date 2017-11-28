@@ -1,8 +1,8 @@
-package com.spring.boot.config;
+package com.spring.boot.core.config;
 
 
-import com.spring.boot.security.UrlUserService;
-import com.spring.boot.utils.MD5Util;
+import com.spring.boot.core.security.UrlUserService;
+import com.spring.boot.core.utils.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

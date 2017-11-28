@@ -1,4 +1,4 @@
-package com.spring.boot.security;
+package com.spring.boot.core.security;
 
 import com.spring.boot.mapper.security.SysPermissionMapper;
 import com.spring.boot.mapper.security.SysUserMapper;
@@ -25,7 +25,6 @@ public class UrlUserService implements UserDetailsService {
     SysPermissionMapper permissionMapper;
     @Override
     public UserDetails loadUserByUsername(String userName) { //重写loadUserByUsername 方法获得 userdetails 类型用户
-        System.err.println(userMapper);
         SysUser sysUser = userMapper.getByUserName(userName);
         if (sysUser != null) {
             List<SysPermission> sysPermissions = permissionMapper.getByUserId(sysUser.getId());
