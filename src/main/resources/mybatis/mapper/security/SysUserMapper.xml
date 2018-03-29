@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.spring.boot.mapper.security.SysUserMapper">
-    <resultMap id="userMap" type="com.spring.boot.moduls.security.SysUser">
+<mapper namespace="com.spring.boot.dao.security.SysUserMapper">
+    <resultMap id="userMap" type="com.spring.boot.entity.security.SysUser">
         <id property="id" column="id"/>
         <result property="cnname" column="cnname"/>
         <result property="username" column="username"/>
@@ -54,7 +54,7 @@
         where username= #{username}
     </select>
 
-    <insert id="create" parameterType="com.spring.boot.moduls.security.SysUser">
+    <insert id="create" parameterType="com.spring.boot.entity.security.SysUser">
         <selectKey resultType="int"  order="AFTER" keyProperty="id" >
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -85,7 +85,7 @@
         )
     </insert>
 
-    <update id="update" parameterType="com.spring.boot.moduls.security.SysUser">
+    <update id="update" parameterType="com.spring.boot.entity.security.SysUser">
         UPDATE sys_user
         <set>
             <if test = "cnname != null and cnname != ''">

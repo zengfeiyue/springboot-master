@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.spring.boot.mapper.security.SysPermissionMapper">
-    <resultMap id="permissionMap" type="com.spring.boot.moduls.security.SysPermission">
+<mapper namespace="com.spring.boot.dao.security.SysPermissionMapper">
+    <resultMap id="permissionMap" type="com.spring.boot.entity.security.SysPermission">
         <id property="id" column="id"/>
         <result property="name" column="name"/>
         <result property="permissionUrl" column="permissionUrl"/>
@@ -54,7 +54,7 @@
         where u.id=#{userId}
     </select>
 
-    <insert id="create" parameterType="com.spring.boot.moduls.security.SysPermission">
+    <insert id="create" parameterType="com.spring.boot.entity.security.SysPermission">
         <selectKey resultType="int"  order="AFTER" keyProperty="id" >
             SELECT LAST_INSERT_ID()
         </selectKey>
@@ -73,7 +73,7 @@
         )
     </insert>
 
-    <update id="update" parameterType="com.spring.boot.moduls.security.SysPermission">
+    <update id="update" parameterType="com.spring.boot.entity.security.SysPermission">
         UPDATE sys_permission SET
         name = #{name},
         permission_url = #{permissionUrl},

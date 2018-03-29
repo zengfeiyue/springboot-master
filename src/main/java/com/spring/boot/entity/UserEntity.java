@@ -1,4 +1,4 @@
-package com.spring.boot.moduls;
+package com.spring.boot.entity;
 
 
 import java.io.Serializable;
@@ -8,7 +8,7 @@ import java.io.Serializable;
  */
 public class UserEntity implements Serializable {
     private static final long serialVersionUID = 1L;
-    private Long id;
+
     private String userName;
     private String passWord;
 
@@ -25,13 +25,6 @@ public class UserEntity implements Serializable {
 
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getUserName() {
         return userName;

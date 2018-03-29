@@ -1,9 +1,8 @@
 package com.spring.boot.service;
 
-import com.spring.boot.mapper.security.SysUserMapper;
-import com.spring.boot.moduls.security.SysUser;
+import com.spring.boot.dao.security.SysUserMapper;
+import com.spring.boot.entity.security.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.session.SessionRegistry;
 import org.springframework.stereotype.Service;
 
 /**

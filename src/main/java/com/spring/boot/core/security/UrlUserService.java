@@ -1,9 +1,9 @@
 package com.spring.boot.core.security;
 
-import com.spring.boot.mapper.security.SysPermissionMapper;
-import com.spring.boot.mapper.security.SysUserMapper;
-import com.spring.boot.moduls.security.SysPermission;
-import com.spring.boot.moduls.security.SysUser;
+import com.spring.boot.dao.security.SysPermissionMapper;
+import com.spring.boot.dao.security.SysUserMapper;
+import com.spring.boot.entity.security.SysPermission;
+import com.spring.boot.entity.security.SysUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

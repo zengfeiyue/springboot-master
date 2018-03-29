@@ -1,4 +1,4 @@
-package com.spring.boot.mapper;
+package com.spring.boot.dao;
 
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;

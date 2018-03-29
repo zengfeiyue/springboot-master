@@ -1,7 +1,7 @@
-package com.spring.boot.mapper.security;
+package com.spring.boot.dao.security;
 
 
-import com.spring.boot.moduls.security.SysUser;
+import com.spring.boot.entity.security.SysUser;
 
 import java.util.List;
 import java.util.Map;

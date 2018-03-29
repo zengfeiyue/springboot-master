@@ -17,12 +17,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 
 /**
- * <Description> <br>
  *
- * @author zengfeiyue<br>
- * @version 1.0<br>
- * @taskId <br>
- * @CreateDate 2017年1月13日 <br>
+ *
+ * @author zengfeiyue
+ * @version 1.0
  */
 @Configuration
 @EnableWebSecurity
@@ -42,6 +40,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/css/**").permitAll()
                 .antMatchers("/fonts/**").permitAll()
                 .antMatchers("/favicon.ico").permitAll()
+                .antMatchers("/test").permitAll()
                 .antMatchers("/").permitAll()
                 .anyRequest().authenticated()
                 .and()

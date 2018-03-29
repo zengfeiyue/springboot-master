@@ -1,4 +1,4 @@
-package com.spring.boot.moduls.security;
+package com.spring.boot.entity.security;
 
 /**
  *
